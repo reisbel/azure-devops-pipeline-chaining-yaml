@@ -1,0 +1,18 @@
+# Release Build pipeline
+# More info at https://aka.ms/yaml
+
+trigger:
+    - master
+    
+pool:
+    vmImage: 'ubuntu-latest'
+    resources:
+      pipelines:
+      - pipeline: 'azure-devops-pipeline-chaining-yaml - build pipeline'
+        source: 'azure-devops-pipeline-chaining-yaml - build pipeline'
+        trigger:
+         enabled: true
+    
+    steps:
+    - download: 'azure-devops-pipeline-chaining-yaml - build pipeline'
+      artifact: 'drop'
