@@ -13,6 +13,6 @@ pool:
         trigger:
          enabled: true
     
-    steps:
+steps:
     - download: 'azure-devops-pipeline-chaining-yaml - build pipeline'
       artifact: 'drop'
