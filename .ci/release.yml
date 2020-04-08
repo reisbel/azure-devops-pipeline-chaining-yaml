@@ -6,12 +6,13 @@ trigger:
     
 pool:
     vmImage: 'ubuntu-latest'
-    resources:
-      pipelines:
-      - pipeline: 'azure-devops-pipeline-chaining-yaml - build pipeline'
-        source: 'azure-devops-pipeline-chaining-yaml - build pipeline'
-        trigger:
-         enabled: true
+
+resources:
+  pipelines:
+  - pipeline: 'azure-devops-pipeline-chaining-yaml - build pipeline'
+    source: 'azure-devops-pipeline-chaining-yaml - build pipeline'
+    trigger:
+      enabled: true
     
 steps:
     - download: 'azure-devops-pipeline-chaining-yaml - build pipeline'
