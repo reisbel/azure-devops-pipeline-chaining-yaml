@@ -31,19 +31,17 @@ steps:
 Release pipeline code - releases are trigged by the execution of the build pipeline
 
 ```yml
-trigger:
-    - master
 pool:
     vmImage: 'ubuntu-latest'
 
 resources:
   pipelines:
-  - pipeline: 'azure-devops-pipeline-chaining-yaml - build pipeline'
-    source: 'azure-devops-pipeline-chaining-yaml - build pipeline'
+  - pipeline: 'chaining-yaml - build pipeline'
+    source: 'chaining-yaml - build pipeline'
     trigger:
       enabled: true
 steps:
-    - download: 'azure-devops-pipeline-chaining-yaml - build pipeline'
+    - download: 'chaining-yaml - build pipeline'
       artifact: 'drop'
 ```
 
@@ -51,7 +49,7 @@ steps:
 
 * [Build Pipeline](https://dev.azure.com/infladera/Public/_build?definitionId=5&_a=summary)
 
-* [Release Pipeline](https://dev.azure.com/infladera/Public/_build?definitionId=6&_a=summary)
+* [Release Pipeline](https://dev.azure.com/infladera/Public/_build?definitionId=7&_a=summary)
 
 ## License
 
