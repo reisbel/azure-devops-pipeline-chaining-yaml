@@ -1,9 +1,6 @@
 # Release Build pipeline
 # More info at https://aka.ms/yaml
 
-trigger:
-    - master
-    
 pool:
     vmImage: 'ubuntu-latest'
 
