@@ -6,11 +6,11 @@ pool:
 
 resources:
   pipelines:
-  - pipeline: 'azure-devops-pipeline-chaining-yaml - build pipeline'
-    source: 'azure-devops-pipeline-chaining-yaml - build pipeline'
+  - pipeline: 'chaining-yaml - build pipeline'
+    source: 'chaining-yaml - build pipeline'
     trigger:
       enabled: true
     
 steps:
-    - download: 'azure-devops-pipeline-chaining-yaml - build pipeline'
+    - download: 'chaining-yaml - build pipeline'
       artifact: 'drop'
